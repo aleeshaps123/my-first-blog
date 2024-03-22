@@ -43,7 +43,7 @@
                 if(navigator.share){
                     navigator.share({
                         title:"Google Official Website",
-                        url:"https://www.google.com",
+                        url:"{% url 'post_detail' pk=post.pk %}",
                     }).then(()=>{
                         console.log("Thanks for sharing");
                     }).catch((err)=>{
